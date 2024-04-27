@@ -1,5 +1,9 @@
 package ru.itis.inf304;
 
+import java.util.Iterator;
+import java.util.Spliterator;
+import java.util.function.Consumer;
+
 public class Set<T> implements SetInterface <T>{
 
     int capacity;
@@ -62,5 +66,6 @@ public class Set<T> implements SetInterface <T>{
         }
         return false;
     }
+
 
 }

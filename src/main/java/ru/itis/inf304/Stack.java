@@ -14,6 +14,13 @@ public class Stack <T> implements StackInterface<T>{
         size--;
     }
 
+//    public T pop1(){
+//        T headOld = head;
+//        head = (T) array[size - 1];
+//        array[size] = null;
+//        size--;
+//        return headOld;
+//    }
     @Override
     public void push(T element) {
         Object[] arrayNew = new Object[(array.length +1) *2];

@@ -9,7 +9,7 @@ import java.io.IOException;
 public class BracketsCheckTest {
     @Test
     public void TestBrackets() throws IOException {
-        boolean result = BracketsCheck.validateJSON("transport.json");
-        Assert.assertTrue(result);
+        Assert.assertTrue(BracketsCheck.validateJSON("transport.json"));
+        Assert.assertTrue(BracketsCheck.validateJSON("transport2.json"));
     }
 }

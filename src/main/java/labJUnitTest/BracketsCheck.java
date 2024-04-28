@@ -49,7 +49,7 @@ public class BracketsCheck {
         }
     }
     public static  boolean isTextChar(char ch) {
-        return String.valueOf(ch).matches("[\\p{IsLatin}\\p{IsCyrillic}\\p{N}\\p{P}]");
+        return String.valueOf(ch).matches("^[a-zA-Zа-яА-Я0-9.,!?'\"\\s{}\\[\\]\\(\\)@#$%^&*_+-=~/`|\\\\:]+$");
     }
 
 

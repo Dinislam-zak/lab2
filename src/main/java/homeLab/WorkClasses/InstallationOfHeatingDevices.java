@@ -12,14 +12,15 @@ public class InstallationOfHeatingDevices extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start installation of heating devices");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End installation of heating devices");
-            arrayWorkingProcess[10] = true;
+
         }
+        System.out.println("Start installation of heating devices");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End installation of heating devices");
+        arrayWorkingProcess[10] = true;
     }
 }

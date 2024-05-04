@@ -12,14 +12,15 @@ public class ElectricalWiring extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start electrical wiring");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End electrical wiring");
-            arrayWorkingProcess[11] = true;
+
         }
+        System.out.println("Start electrical wiring");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End electrical wiring");
+        arrayWorkingProcess[11] = true;
     }
 }

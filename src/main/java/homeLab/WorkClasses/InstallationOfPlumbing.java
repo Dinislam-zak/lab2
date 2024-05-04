@@ -12,14 +12,15 @@ public class InstallationOfPlumbing extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start installation of plumbing");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End installation of plumbing");
-            arrayWorkingProcess[15] = true;
+
         }
+        System.out.println("Start installation of plumbing");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End installation of plumbing");
+        arrayWorkingProcess[15] = true;
     }
 }

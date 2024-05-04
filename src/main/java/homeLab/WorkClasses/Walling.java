@@ -12,14 +12,14 @@ public class Walling extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start Walling");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End Walling");
-            arrayWorkingProcess[6] = true;
         }
+        System.out.println("Start Walling");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End Walling");
+        arrayWorkingProcess[6] = true;
     }
 }

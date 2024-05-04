@@ -12,14 +12,15 @@ public class ManufactoringOfDoors extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start manufactoring of doors");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End manufactoring of doors");
-            arrayWorkingProcess[3] = true;
+
         }
+        System.out.println("Start manufactoring of doors");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End manufactoring of doors");
+        arrayWorkingProcess[3] = true;
     }
 }

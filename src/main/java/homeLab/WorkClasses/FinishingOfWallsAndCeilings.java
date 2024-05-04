@@ -12,14 +12,15 @@ public class FinishingOfWallsAndCeilings extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start finishing of walls and ceilings");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End finishing of walls and ceilings");
-            arrayWorkingProcess[12] = true;
+
         }
+        System.out.println("Start finishing of walls and ceilings");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End finishing of walls and ceilings");
+        arrayWorkingProcess[12] = true;
     }
 }

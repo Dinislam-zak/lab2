@@ -12,14 +12,15 @@ public class DoorInstallation extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start door installation");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End door installation");
-            arrayWorkingProcess[9] = true;
+
         }
+        System.out.println("Start door installation");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End door installation");
+        arrayWorkingProcess[9] = true;
     }
 }

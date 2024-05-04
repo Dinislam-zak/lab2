@@ -12,14 +12,15 @@ public class InstallationOfWindows extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start installation of windows");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End installation of windows");
-            arrayWorkingProcess[8] = true;
+
         }
+        System.out.println("Start installation of windows");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End installation of windows");
+        arrayWorkingProcess[8] = true;
     }
 }

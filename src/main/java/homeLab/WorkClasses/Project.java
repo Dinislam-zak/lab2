@@ -12,14 +12,15 @@ public class Project extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start Project");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End Project");
-            arrayWorkingProcess[1] = true;
+
         }
+        System.out.println("Start Project");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End Project");
+        arrayWorkingProcess[1] = true;
     }
 }

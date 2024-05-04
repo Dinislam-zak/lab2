@@ -12,14 +12,15 @@ public class LayingСommunications extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start Laying Communications");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End Laying Communications");
-            arrayWorkingProcess[5] = true;
+
         }
+        System.out.println("Start Laying Communications");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End Laying Communications");
+        arrayWorkingProcess[5] = true;
     }
 }

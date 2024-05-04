@@ -12,14 +12,15 @@ public class InstallationOfLightingFixtures extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start installation of lightning fixtures");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End installation of lightning fixtures");
-            arrayWorkingProcess[14] = true;
+
         }
+        System.out.println("Start installation of lightning fixtures");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End installation of lightning fixtures");
+        arrayWorkingProcess[14] = true;
     }
 }

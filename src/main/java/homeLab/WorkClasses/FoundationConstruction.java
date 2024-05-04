@@ -12,14 +12,15 @@ public class FoundationConstruction extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start Foundation Construction");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End Foundation Construction");
-            arrayWorkingProcess[4] = true;
+
         }
+        System.out.println("Start Foundation Construction");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End Foundation Construction");
+        arrayWorkingProcess[4] = true;
     }
 }

@@ -12,14 +12,15 @@ public class FloorFinishing extends WorkingProcessArray {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("Start floor finishing");
-            try {
-                Thread.sleep(1000*duration);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.println("End floor finishing");
-            arrayWorkingProcess[13] = true;
+
         }
+        System.out.println("Start floor finishing");
+        try {
+            Thread.sleep(1000*duration);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("End floor finishing");
+        arrayWorkingProcess[13] = true;
     }
 }

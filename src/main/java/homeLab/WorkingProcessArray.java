@@ -8,16 +8,17 @@ public abstract class WorkingProcessArray implements Runnable {
         isCounting = true;
         Thread countingThread = new Thread(() -> {
             while (isCounting) {
-                days++;
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                days++;
             }
         });
         countingThread.start();
     }
+
 
     protected void stopCount() {
         isCounting = false;
@@ -26,4 +27,7 @@ public abstract class WorkingProcessArray implements Runnable {
     protected int getDays() {
         return days;
     }
+    abstract protected int getDuration();
+    abstract protected int getDayOfBegin();
+    abstract protected int getDayOfEnd();
 }

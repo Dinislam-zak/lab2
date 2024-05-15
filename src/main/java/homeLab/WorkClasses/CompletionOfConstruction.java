@@ -21,6 +21,23 @@ public class CompletionOfConstruction extends WorkingProcessArray {
         System.out.println("End completion of construction");
 
         stopCount();
-        System.out.println(getDays());
+
+
+
+    }
+
+    @Override
+    protected int getDuration() {
+        return 0;
+    }
+
+    @Override
+    protected int getDayOfBegin() {
+        return days;
+    }
+
+    @Override
+    protected int getDayOfEnd() {
+        return days;
     }
 }

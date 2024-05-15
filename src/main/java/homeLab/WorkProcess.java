@@ -1,6 +1,7 @@
 package homeLab;
 
 import homeLab.WorkClasses.*;
+import homeLab.WorkersTeamPackage.*;
 
 public class WorkProcess {
     public static void main(String[] args) {
@@ -26,6 +27,29 @@ public class WorkProcess {
 
         for (WorkingProcessArray cl : ListToDo){
             new Thread(cl).start();
+        }
+
+        Thread resultThreads = new Thread(ListToDo[16]);
+        resultThreads.start();
+        try {
+            resultThreads.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        int duration = ListToDo[16].getDays();
+        System.out.println("\nКоличество дней работы: " + duration);
+
+        System.out.println("\nБригады:\n");
+        WorkersTeam[] teams = new WorkersTeam[]{
+                new Bricklayers(),
+                new Carpenters(),
+                new Electricians(),
+                new Plasterers(),
+                new Plumbers()
+        };
+        for (WorkersTeam team : teams) {
+            System.out.println(team.name() + " проиграли в домино: " + team.numberDominoDays(ListToDo) + " дней");
         }
     }
 }

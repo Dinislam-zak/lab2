@@ -8,6 +8,18 @@ public class BeginningOfWork extends WorkingProcessArray {
         System.out.println("Start Beginning of work");
         System.out.println("End Beginning of work");
         arrayWorkingProcess[0] = true;
-        startCount();
+    }
+    protected int getDuration() {
+        return 0;
+    }
+
+    @Override
+    protected int getDayOfBegin() {
+        return days;
+    }
+
+    @Override
+    protected int getDayOfEnd() {
+        return days;
     }
 }
